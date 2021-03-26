@@ -20,5 +20,6 @@ module.exports = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true, // clean up /dist folder
+    publicPath: '/', // will be used within our server script
   },
 };
