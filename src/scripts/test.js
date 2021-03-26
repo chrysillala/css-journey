@@ -1,4 +1,6 @@
 import _ from 'lodash';
+import '../styles/main.css';
+import '../styles/test.css';
 import printMe from './print.js';
 
 function component() {
@@ -7,6 +9,7 @@ function component() {
 
   // Lodash, currently included via a script, is required for this line to work
   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+  element.classList.add('hello');
 
   btn.innerHTML = 'Click me and check the console!';
   btn.onclick = printMe;
