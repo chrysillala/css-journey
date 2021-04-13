@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+$theme-colors: (
+  "black": #000,
+  "white": #fff,
+  "light-gray": #F0F6FB,
+  "gray": #ACACAC,
+  "dark-gray": #8C919E,
+  "red": #F1642E,
+  "olive": #CBBE0C,
+  "navy": #384874,
+  "light-blue": #EEF1FC,
+  "blue": #597FE2,
+);
+
+:root {
+  // Generate CSS Variables for theme colors
+  // ----------------------
+  @each $name, $hex in $theme-colors {
+    --#{$name}: #{$hex};
+  }
+}
+
+@each $name, $hex in $theme-colors {
+  .bg-#{$name} {
+    background-color: var(--#{$name});
+  }
+
+  .text-#{$name} {
+    color: var(--#{$name});
+  }
+
+  .border-#{$name} {
+    border: 1px solid var(--#{$name});
+  }
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+}
+
+nav {
+  .active {
+    &:after {
+      content: '';
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-bottom: 3px solid var(--blue);
+    }
+  }
+}
+
+.deconstructed-pancake {
+  //  flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+  flex: 1 1 300px;
+}
+
+.pancake-stack {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.super-centered {
+  display: grid;
+  place-items: center;
+}

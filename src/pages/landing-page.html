@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body class="pancake-stack">
+  <div class="bg-light-gray">
+    <nav class="container mx-auto flex justify-space-between items-center h-10">
+      <div class="my-1">
+        <img src="https://via.placeholder.com/150x30" alt="this is placeholder image" loading="lazy">
+      </div>
+      <ul class="flex">
+        <li class="my-1 active">Color Oracle</li>
+        <li class="my-1">How To</li>
+        <li class="my-1">Manual</li>
+        <li class="my-1">Design Tips</li>
+        <li class="my-1">Useful Links</li>
+      </ul>
+    </nav>
+  </div>
+  <main class="bg-light-gray px-4">
+    <div class="container mx-auto h-full flex flex-column justify-center ">
+      <h1 class="text-center text-black text-bold text-3">Design for the color impaired</h1>
+      <div class="super-centered">
+        <p class="w-5p text-center mt-1">Color Oracle is a free color blindness simulator for Windows, Mac and Linux. <br>It takes the guesswork out of designing for color blindness by showing you in real time what people with common color vision impairments will see.</p>
+      </div>
+      <section class="flex flex-wrap justify-space-around w-full mt-5">
+        <article class="deconstructed-pancake flex flex-column text-center radius-2 bg-white duration-300 hover-scale-110 p-4 m-2">
+          <div class="">
+            <img src="https://via.placeholder.com/150" alt="this is placeholder image" loading="lazy">
+          </div>
+          <button class="bg-white border-gray p-1 mt-1">Download for Mac</button>
+        </article>
+        <article class="deconstructed-pancake flex flex-column text-center radius-2 bg-white duration-300 hover-scale-110 p-4 m-2">
+          <div class="">
+            <img src="https://via.placeholder.com/150" alt="this is placeholder image" loading="lazy">
+          </div>
+          <button class="bg-blue text-white p-1 mt-1">Download for Windows</button>
+          <p class="text-gray mt-1">Requires Java 6 or higher</p>
+        </article>
+        <article class="deconstructed-pancake flex flex-column text-center radius-2 bg-white duration-300 hover-scale-110 p-4 m-2">
+          <div class="">
+            <img src="https://via.placeholder.com/150" alt="this is placeholder image" loading="lazy">
+          </div>
+          <button class="bg-white border-gray p-1 mt-1">Download for Linux</button>
+          <p class="text-gray mt-1">Requires Java 6 or higher</p>
+        </article>
+      </section>
+    </div>
+  </main>
+  <footer class="bg-light-blue p-3">
+    <div class="flex flex-wrap justify-space-around">
+      <div class="deconstructed-pancake flex flex-column p-2">
+        <p class="text-bold">
+          About
+        </p>
+        <p class="mt-1">
+          Development: Bernie Jenny, Monash University, Australia. Ideas, testing and icon: Nathaniel Vaughn Kelso, California.
+        </p>
+      </div>
+      <div class="deconstructed-pancake flex flex-column p-2">
+        <p class="text-bold">
+          Feedback
+        </p>
+        <p class="mt-1">
+          Color Oracle is a work in progress and will improve with time and your input. Please share your Color Oracle testimonial with us and send us an email.
+        </p>
+      </div>
+      <div class="deconstructed-pancake flex flex-column p-2">
+        <p class="text-bold">
+          Source
+        </p>
+        <p class="mt-1">
+          Color Oracle is open source, available on GitHub for Mac and Windows/Java.
+        </p>
+      </div>
+    </div>
+    <div class="text-center mt-6">
+      &#169; 2006–2018 by Bernie Jenny, Monash University, Melbourne, Australia. Last site update: 5 May 2018.
+    </div>
+  </footer>
+</body>
+</html>
