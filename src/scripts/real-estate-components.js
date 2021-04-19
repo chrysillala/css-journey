@@ -1,0 +1,1 @@
+import '../styles/pages/_real-estate-components.scss';

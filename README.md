@@ -14,8 +14,11 @@ https://1linelayouts.glitch.me/
 
 ### UI Design
 https://www.uidesigndaily.com/
-https://www.uidesigndaily.com/posts/figma-landing-page-website-day-955
-https://www.uidesigndaily.com/posts/figma-people-list-card-day-1310
+#1: https://www.uidesigndaily.com/posts/figma-landing-page-website-day-955
+#2: https://www.uidesigndaily.com/posts/figma-people-list-card-day-1310
+#3: https://www.uidesigndaily.com/posts/sketch-links-navigation-card-cards-day-1128
+#4: https://www.uidesigndaily.com/posts/figma-real-estate-components-cards-profile-details-day-1166
+#5:
 
 https://www.uidesigndaily.com/posts/sketch-website-card-day-1270
 https://www.uidesigndaily.com/posts/sketch-cards-list-ui-design-website-day-1218

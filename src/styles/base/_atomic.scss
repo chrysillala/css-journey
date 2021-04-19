@@ -89,6 +89,10 @@ $text-aligns: (center, left, right);
   height: 100%;
 }
 
+.h-content {
+  height: fit-content;
+}
+
 .w-full {
   width: 100%;
 }
@@ -193,4 +197,13 @@ $text-aligns: (center, left, right);
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.text-squishy {
+	word-break: break-word; /* Samsung browser */
+	word-wrap: break-word; /* IE 11 */
+	overflow-wrap: anywhere;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
 }

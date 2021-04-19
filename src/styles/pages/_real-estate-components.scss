@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap');
+
+@import '../base/reset';
+@import '../base/atomic';
+
+$theme-colors: (
+  "black": #000,
+  "white": #FFF,
+  "blue": #3863FC,
+  "dark-yellow": #DA8F00,
+  "light-gray": #EBEFFF,
+);
+
+:root {
+  // Generate CSS Variables for theme colors
+  // ----------------------
+  @each $name, $hex in $theme-colors {
+    --#{$name}: #{$hex};
+  }
+}
+
+// create background color, color and border classes based on theme colors
+@each $name, $hex in $theme-colors {
+  .bg-#{$name} {
+    background-color: var(--#{$name});
+  }
+
+  .text-#{$name} {
+    color: var(--#{$name});
+  }
+
+  .border-#{$name} {
+    border: 1px solid var(--#{$name});
+  }
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+}
+
+.ram {
+  display: grid;
+  grid-gap: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.shadow {
+  box-shadow: 0px 4px 20px 10px rgba(195, 186, 182, 0.1);
+}
+
+.line-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.respect-for-aspect {
+  aspect-ratio: 16 / 9;
+}
