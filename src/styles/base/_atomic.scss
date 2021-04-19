@@ -28,7 +28,7 @@ $multiplier-loop: 10;
   }
 }
 
-$displays: (block, flex, grid);
+$displays: (block, flex, grid, none);
 @each $display in $displays {
   .#{$display} {
     display: #{$display};
@@ -63,10 +63,13 @@ $text-aligns: (center, left, right);
   }
 }
 
-$font-weights: (bold);
-@each $weight in $font-weights {
-  .text-#{$weight} {
-    font-weight: #{$weight};
+@for $i from 1 through 9 {
+  .font-#{$i * 100} {
+    font-weight: $i * 100;
+  }
+
+  .gap-#{$i} {
+    gap: $i * 1rem;
   }
 }
 
@@ -112,11 +115,11 @@ $font-weights: (bold);
   }
 
   .px-#{$i} {
-    padding: $i * $multiplier 0;
+    padding: 0 $i * $multiplier;
   }
 
   .py-#{$i} {
-    padding: 0 $i * $multiplier;
+    padding: $i * $multiplier 0;
   }
 
   .m-#{$i} {
@@ -140,11 +143,11 @@ $font-weights: (bold);
   }
 
   .mx-#{$i} {
-    margin: $i * $multiplier 0;
+    margin: 0 $i * $multiplier;
   }
 
   .my-#{$i} {
-    margin: 0 $i * $multiplier;
+    margin: $i * $multiplier 0;
   }
 
   .h-#{$i} {
@@ -186,4 +189,8 @@ $font-weights: (bold);
   &:hover {
     transform: scale(1.1);
   }
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }

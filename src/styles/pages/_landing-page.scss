@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
+@import '../base/reset';
+@import '../base/atomic';
+
 $theme-colors: (
   "black": #000,
-  "white": #fff,
+  "white": #FFF,
   "light-gray": #F0F6FB,
   "gray": #ACACAC,
   "dark-gray": #8C919E,
@@ -56,7 +59,8 @@ nav {
 
 .deconstructed-pancake {
   //  flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
-  flex: 1 1 300px;
+  // no stretching
+  flex: 0 1 300px;
 }
 
 .pancake-stack {
