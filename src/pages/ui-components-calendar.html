@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body class="bg-light-pink text-black super-centered">
+  <section class="container mx-auto">
+    <div class="span-grid-12 px-5">
+      <div class="span-5 bg-purple text-white radius-2 shadow p-4">
+        <div class="flex items-center">
+          <div class="w-5 h-5 border-dark-purple text-4 p-2 rounded-full super-centered">8</div>
+          <div class="m-2">
+            Days remaing from your trial
+          </div>
+        </div>
+      </div>
+      <div class="span-7 bg-white radius-2 shadow h-content align-self-end p-2">
+        <div class="calendar-grid">
+          <div class="super-centered p-2">
+            <span>Tue</span>
+            <p class="font-700 mt-1">7</p>
+          </div>
+          <div class="super-centered p-2">
+            <span>Wed</span>
+            <p class="font-700 mt-1">8</p>
+          </div>
+          <div class="super-centered p-2 bg-purple text-white shadow-purple radius-2">
+            <span>Thu</span>
+            <p class="font-700 mt-1">9</p>
+          </div>
+          <div class="super-centered p-2">
+            <span>Today</span>
+            <p class="font-700 mt-1">10</p>
+          </div>
+          <div class="super-centered p-2">
+            <span>Sat</span>
+            <p class="font-700 mt-1">11</p>
+          </div>
+          <div class="super-centered p-2">
+            <span>Sun</span>
+            <p class="font-700 mt-1">12</p>
+          </div>
+        </div>
+      </div>
+      <div class="span-10 bg-white radius-2 shadow p-3">
+        <div class="flex justify-space-between">
+          <p class="text-3 font-700">Type something</p>
+          <a href="#" class="bg-light-gray text-black radius-1 p-1">View all</a>
+        </div>
+        <div class="dashboard-grid mt-4">
+          <div class="bg-yellow text-white radius-2 p-3">
+            <div class="flex items-center">
+              <i class="far fa-thumbs-up fa-fw fa-2x"></i>
+              <span class="text-3 font-700 ml-1">785</span>
+            </div>
+            <p class="mt-1">Appreciations received</p>
+          </div>
+          <div class="bg-dark-orange text-white radius-2 p-3">
+            <div class="flex items-center">
+              <i class="far fa-star fa-fw fa-2x"></i>
+              <span class="text-3 font-700 ml-1">356</span>
+            </div>
+            <p class="mt-1">Stars received</p>
+          </div>
+          <div class="bg-orange text-white radius-2 p-3">
+            <div class="flex items-center">
+              <i class="far fa-comment-dots fa-fw fa-2x"></i>
+              <span class="text-3 font-700 ml-1">174</span>
+            </div>
+            <p class="mt-1">Comments received</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

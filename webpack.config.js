@@ -19,7 +19,7 @@ const camelCase = (str) => {
     .join('');
 }
 
-let htmlPageNames = ['test', 'landing-page', 'people-list', 'links-navigation', 'real-estate-components'];
+let htmlPageNames = ['test', 'landing-page', 'people-list', 'links-navigation', 'real-estate-components', 'ui-components-calendar'];
 let multipleHtmlPlugins = htmlPageNames.map(page => {
   return new HtmlWebpackPlugin({
     title: `${capitalize(page)}`,
@@ -38,6 +38,7 @@ module.exports = {
     peopleList: './src/scripts/people-list.js',
     linksNavigation: './src/scripts/links-navigation.js',
     realEstateComponents: './src/scripts/real-estate-components.js',
+    uiComponentsCalendar: './src/scripts/ui-components-calendar.js',
   },
   devtool: 'inline-source-map', // using source maps
   devServer: {

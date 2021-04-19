@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+@import '../base/reset';
+@import '../base/atomic';
+
+$theme-colors: (
+  "black": #1A1A28,
+  "white": #FFF,
+  "light-pink": #F5C9C9,
+  "purple": #5E4890,
+  "dark-purple": #553D8A,
+  "yellow": #F4B73F,
+  "orange": #F99651,
+  "dark-orange": #F97751,
+  "light-gray": #F2F0F0,
+);
+
+:root {
+  // Generate CSS Variables for theme colors
+  // ----------------------
+  @each $name, $hex in $theme-colors {
+    --#{$name}: #{$hex};
+  }
+}
+
+// create background color, color and border classes based on theme colors
+@each $name, $hex in $theme-colors {
+  .bg-#{$name} {
+    background-color: var(--#{$name});
+  }
+
+  .text-#{$name} {
+    color: var(--#{$name});
+  }
+
+  .border-#{$name} {
+    border: 1px solid var(--#{$name});
+  }
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  min-height: 100vh;
+}
+
+.shadow {
+  box-shadow: 0px 22px 38px -21px #F5C9C9;;
+}
+
+.shadow-purple {
+  box-shadow: 0px 15px 15px -10px rgba(94, 72, 144, 0.791412);
+}
+
+.border-dark-purple {
+  border-width: 3px;
+}
+
+.super-centered {
+  display: grid;
+  place-items: center;
+}
+
+.span-grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+
+  .span-10 {
+    grid-column: 3 / span 10;
+  }
+
+  .span-7 {
+    grid-column: 6 / span 7;
+  }
+
+  .span-5 {
+    grid-column: 1 / span 5;
+  }
+
+  .span-2 {
+    grid-column: 3 / span 2;
+  }
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.align-self-end {
+  align-self: end;
+}
