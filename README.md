@@ -53,3 +53,9 @@ https://webpack.js.org/guides/getting-started/
 3. Add js file to `module.export.entry`
 4. Import scss file to js
 5. Now you are ready to go :D
+
+## 📈 Lesson Learned
+1. webpack guide documentation is helpful and easy to understand
+1. we import css from js
+1. creating html setup for multi page application was quite tricky
+1. HMR gotcha: https://webpack.js.org/guides/hot-module-replacement/#gotchas
